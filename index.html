@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-
-    <title>NuCamp: A Better Way To Camp</title>
   </head>
 
   <body>
@@ -28,7 +26,7 @@
             <h2>a better way to camp</h2>
           </div>
           <div class="col col-md-4 col-xl-2 mt-4">
-            <a href="" role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+            <a id="reserveButton" role="button" class="btn btn-lg btn-info text-nowrap">Reserve Campsite</a>
           </div>
         </div>
       </div>
@@ -37,13 +35,13 @@
     <div id="reserveModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header bg-info text-white">
+          <div class="modal-header">
             <h3 class="modal-title">Reserve a Campsite</h3>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
             <div class="container-fluid">
-              <form action="">
+              <form id="reserveForm" action="">
                 <div class="row form-group">
                   <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
                   <div class="col">
@@ -110,7 +108,7 @@
             </li>
           </ul>
           <span class="navbar-text ml-auto">
-            <a role="button" data-toggle="modal" data-target="#loginModal"> <i class="fa fa-sign-in"></i> Login </a>
+            <a role="button" id="loginButton"> <i class="fa fa-sign-in"></i> Login </a>
           </span>
         </div>
       </div>
@@ -292,8 +290,9 @@
       CheckMyCode = {
         key: "dKS3sdf9Ab",
         courseid: "boot.nucamp",
-        author: "Todd Sparrow", // your name here
-        assignment: "week1",
+        cohortid: "ONEA-2021-04-06",
+        author: "Rodrick Coleman", // your name here
+        assignment: "week4",
       }
     </script>
     <script src="https://cmc.sparrowweb.net/checkmycode.js"></script>
